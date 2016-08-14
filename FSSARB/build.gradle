@@ -2,8 +2,14 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
+// source folder
+sourceSets {
+    main.java.srcDirs = ['src/main']
+    main.resources.srcDirs = ['src/resources']
+}
+
 repositories {
-		mavenLocal()
+	mavenLocal()
     mavenCentral()
 }
 
