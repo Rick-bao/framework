@@ -19,7 +19,7 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-core', version: '4.3.2.RELEASE'
     
     // springmvc library
-    compile group: 'com.mangofactory', name: 'swagger-springmvc', version: '1.0.2'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.2.RELEASE'
     
     // hibernate library  
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.0.1.Final'
