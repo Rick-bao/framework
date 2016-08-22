@@ -4,15 +4,17 @@ apply plugin: 'eclipse'
 
 // source folder
 sourceSets {
-    main.java.srcDirs = ['src/main']
-    main.resources.srcDirs = ['src/resources']
+    main.java.srcDirs = ['src/main/java']
+    main.resources.srcDirs = ['src/main/resources']
 }
 
+//仓库
 repositories {
 	mavenLocal()
     mavenCentral()
 }
 
+//配置依赖
 dependencies {
     
     // spring library
