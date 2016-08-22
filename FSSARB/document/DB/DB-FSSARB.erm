@@ -41,7 +41,7 @@
 		<suspend_validator>false</suspend_validator>
 		<export_setting>
 			<export_ddl_setting>
-				<output_path>document\DB-FSSARB.sql</output_path>
+				<output_path>document\DB\DB-FSSARB.sql</output_path>
 				<encoding>UTF-8</encoding>
 				<line_feed>CR+LF</line_feed>
 				<is_open_after_saved>true</is_open_after_saved>
@@ -89,7 +89,7 @@
 				<is_open_after_saved>true</is_open_after_saved>
 			</export_html_setting>
 			<export_image_setting>
-				<output_file_path>document\DB-FSSARB.png</output_file_path>
+				<output_file_path>document\DB\DB-FSSARB.png</output_file_path>
 				<category_dir_path></category_dir_path>
 				<with_category_image>true</with_category_image>
 				<is_open_after_saved>true</is_open_after_saved>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2016-08-19 09:47:09</creation_date>
-			<updated_date>2016-08-22 22:27:34</updated_date>
+			<updated_date>2016-08-22 22:39:55</updated_date>
 			<model_property>
 				<name>Project Name</name>
 				<value></value>
