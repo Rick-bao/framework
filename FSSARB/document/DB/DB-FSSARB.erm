@@ -11,8 +11,8 @@
 	</page_setting>
 	<category_index>0</category_index>
 	<zoom>0.25</zoom>
-	<x>0</x>
-	<y>-27</y>
+	<x>95</x>
+	<y>0</y>
 	<default_color>
 		<r>128</r>
 		<g>128</g>
@@ -49,7 +49,7 @@
 				<category_id>null</category_id>
 				<ddl_target>
 					<create_comment>true</create_comment>
-					<create_foreignKey>true</create_foreignKey>
+					<create_foreignKey>false</create_foreignKey>
 					<create_index>true</create_index>
 					<create_sequence>true</create_sequence>
 					<create_table>true</create_table>
@@ -64,8 +64,8 @@
 					<drop_view>true</drop_view>
 					<inline_column_comment>true</inline_column_comment>
 					<inline_table_comment>true</inline_table_comment>
-					<comment_value_description>true</comment_value_description>
-					<comment_value_logical_name>false</comment_value_logical_name>
+					<comment_value_description>false</comment_value_description>
+					<comment_value_logical_name>true</comment_value_logical_name>
 					<comment_value_logical_name_description>false</comment_value_logical_name_description>
 					<comment_replace_line_feed>false</comment_replace_line_feed>
 					<comment_replace_string></comment_replace_string>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2016-08-19 09:47:09</creation_date>
-			<updated_date>2016-08-22 22:39:55</updated_date>
+			<updated_date>2016-08-23 10:14:50</updated_date>
 			<model_property>
 				<name>Project Name</name>
 				<value></value>
@@ -851,11 +851,11 @@
 		<note>
 			<id>0</id>
 			<height>115</height>
-			<width>438</width>
+			<width>654</width>
 				<font_name>微软雅黑</font_name>
 				<font_size>9</font_size>
-			<x>792</x>
-			<y>-108</y>
+			<x>594</x>
+			<y>-84</y>
 			<color>
 				<r>128</r>
 				<g>128</g>
@@ -5312,8 +5312,8 @@
 		</note>
 		<note>
 			<id>25</id>
-			<height>75</height>
-			<width>881</width>
+			<height>73</height>
+			<width>745</width>
 				<font_name>微软雅黑</font_name>
 				<font_size>9</font_size>
 			<x>396</x>
@@ -5325,7 +5325,7 @@
 			</color>
 			<connections>
 			</connections>
-			<text></text>
+			<text>  注明：如上是部分表结构示意图。仅作为参考，具体以《构建统一平台框架-SSH表设计.docx》内容为主。</text>
 		</note>
 		<note>
 			<id>26</id>
