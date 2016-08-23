@@ -1,21 +1,46 @@
-// plugin
+//1. plugin
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
 
-// source folder
-sourceSets {
-    main.java.srcDirs = ['src/main/java']
-    main.resources.srcDirs = ['src/main/resources']
+//2. classpath
+eclipse.classpath.file {
+    beforeMerged { classpath ->
+        classpath.entries.removeAll { entry -> entry.kind == 'lib' || entry.kind == 'var' }
+    }
+    whenMerged { classpath ->
+        classpath.entries.findAll { entry -> entry.kind == 'lib' }*.exported = false
+    }
 }
 
-//仓库
+eclipse.project.file.beforeMerged { project ->
+    project.natures.clear()
+}
+
+eclipse.wtp.facet.file.withXml { provider ->
+    provider.asNode().fixed.find { it.@facet == 'jst.java' }.@facet = 'jst2.java'
+}
+
+//source java version
+sourceCompatibility=1.7
+//compile java version
+targetCompatibility =1.7
+
+//3. charset
+tasks.withType(JavaCompile) {
+	options.encoding ="UTF-8"
+}
+
+//4. repositories
 repositories {
 	mavenLocal()
     mavenCentral()
 }
 
-//配置依赖
+//5. dependencies
 dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.6'
     
     // spring library
     compile group: 'org.springframework', name: 'spring-core', version: '4.3.2.RELEASE'
@@ -26,6 +51,9 @@ dependencies {
     // hibernate library  
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.0.1.Final'
     
+    // mybatis library
+    compile group: 'org.mybatis', name: 'mybatis', version: '3.2.8'
+    
     // common library
     compile 'org.slf4j:slf4j-api:1.7.13'
     compile 'mysql:mysql-connector-java:5.1.38'
@@ -35,5 +63,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.alibaba/fastjson
 	compile group: 'com.alibaba', name: 'fastjson', version: '1.2.15'
     
+    //test 
     testCompile 'junit:junit:4.12'
+    testCompile 'org.springframework:spring-test:4.2.5.RELEASE'
 }

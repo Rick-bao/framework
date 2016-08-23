@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.rick.fssarb.manager.system.bean">
+
+	<class name="SystemRunningLog" table="system_running_log">
+
+		<id name="id" type="java.lang.String" column="ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="begintime" type="java.lang.String"
+			column="beginTime" not-null="false" />
+
+		<property name="description" type="java.lang.String"
+			column="description" not-null="false" />
+
+		<property name="createip" type="java.lang.String"
+			column="createIP" not-null="false" />
+
+		<property name="endtime" type="java.lang.String"
+			column="endTime" not-null="false" />
+
+		<property name="comments" type="java.lang.String"
+			column="comments" not-null="false" />
+
+	</class>
+</hibernate-mapping>
