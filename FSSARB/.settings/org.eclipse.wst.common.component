@@ -7,10 +7,14 @@
 		<property name="java-output-path" value="/FSSARB/build/classes"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+		<wb-resource deploy-path="/" source-path="WebContent"/>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.6/478feadca929a946b2f1fb962bb2179264759821/groovy-all-2.4.6.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.2.RELEASE/fd2f3cf45d3c84f293cb7ee3ab7d24c979495552/spring-core-4.3.2.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.3.2.RELEASE/1afea599c72aef7362b469a5b322e3e7e37d0dfc/spring-orm-4.3.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.2.RELEASE/99b68a8aca2ed67ad523e7341a90dd1c90fd669e/spring-webmvc-4.3.2.RELEASE.jar">
@@ -40,10 +44,16 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.2.RELEASE/caef216e995f565dd4ab165ec5918ff44487615d/spring-aop-4.3.2.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.2.RELEASE/9e87f48f65a33a017f2dd027911947a28be29f93/spring-beans-4.3.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.2.RELEASE/9e87f48f65a33a017f2dd027911947a28be29f93/spring-beans-4.3.2.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.2.RELEASE/d60bd9daf7d819c72e6a27fad16c4683b2e7df11/spring-jdbc-4.3.2.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.2.RELEASE/dd75075485ddebb1f912102527ff91c4bfbae903/spring-tx-4.3.2.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.2.RELEASE/caef216e995f565dd4ab165ec5918ff44487615d/spring-aop-4.3.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/tools/gradle-repositories/gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.2.RELEASE/e52782b824e097c3b1586b497fc6be0e95020770/spring-context-4.3.2.RELEASE.jar">
